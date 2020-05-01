@@ -1,0 +1,30 @@
+.OBJ file paths to use
+
+Map1/b01.obj
+Map7/map7.obj
+LivingRoom/SimspsonsCouchRoom.obj
+
+Linker
+1. Right click FOGGS in the solution panel and select properties
+2. Select C/C++ and then General.
+3. go to aditional include directories and select the drop down menu then edit.
+4. Select folder icon then the elipcis that forms.
+5. Then go into linking and you will see 4 folders in each one of those there is an include file
+   add all of these
+
+6. At this point you will have 4 include directories then select ok
+
+7. go to linker and general
+8. select additional library directories
+9. same process as before but this time you need to add only 3 files.
+(SQIL2\lib)(Linking\GLFW\lib)(Linking\GLEW\lib)
+
+10. once this is done select ok, go to linker then input
+11. aditional dependencies this time copy and paste this below
+
+opengl32.lib
+glew32.lib
+glfw3.lib
+soil2.lib
+
+12. select okay then apply then you will be done.
